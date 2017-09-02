@@ -72,32 +72,37 @@ oc get route
 ```
 
 **Access Cloudforms from the browser**
+
 default credentials `admin/smartvm`
+
 **Update password** to change default password 
 
 **Configuring OpenShift inside CloudForms**
+
 Left Menu `Containers` -> `Providers`
 Top Menu `Configuration`-> `New Provider`
 
 **Default tab:**
-Security Protocol: `SSL without validation  
-Hostname:  <your master hostname without prefixing with protocol> (eg: master.devday.ocpcloud.com no https)
-API Port: `443`or `8443`
-Token: 
-Use the following command to get the token
+
+Security Protocol: `SSL without validation  	
+Hostname:  <your master hostname without prefixing with protocol> (eg: master.devday.ocpcloud.com no https)	
+API Port: `443`or `8443`	
+Token: 	
+Use the following command to get the token	
 ```
 	oc sa get-token management-admin -n management-infra
-```	
-You must use management-admin token. Otherwise you will have issues with hawkular
+```		
+You must use management-admin token. Otherwise you will have issues with hawkular	
 
 **Hawkular tab:**
-Security Protocol: `SSL without validation`
-Hostname: <your hawkular metrics url without https and without /hawkular/metrics>  (eg: hawkular-metrics.apps.devday.ocpcloud.com)
-API Port: `443`
 
-Under the `Server` tab, in the `Server Control` section, under `Server Roles`, 
-turn on the following 
-`Capacity & Utilization Coordinator`
-`Capacity & Utilization Data Collector`
-`Capacity & Utilization Data Processor`
-`Capacity and Utilization` 
+Security Protocol: `SSL without validation`	
+Hostname: <your hawkular metrics url without https and without /hawkular/metrics>  (eg: hawkular-metrics.apps.devday.ocpcloud.com)	
+API Port: `443`	
+
+Under the `Server` tab, in the `Server Control` section, under `Server Roles`	
+Turn on the following 	
+`Capacity & Utilization Coordinator`	
+`Capacity & Utilization Data Collector`	
+`Capacity & Utilization Data Processor`	
+`Capacity and Utilization` 	
