@@ -110,8 +110,12 @@ API Port: `443`
 
 Under the `Server` tab, in the `Server Control` section, under `Server Roles`	
 
-Turn on the following 	
-`Capacity & Utilization Coordinator`	
+Turn on the following 
+
+`Capacity & Utilization Coordinator`
+
 `Capacity & Utilization Data Collector`	
+
 `Capacity & Utilization Data Processor`	
+
 `Capacity and Utilization` 	
