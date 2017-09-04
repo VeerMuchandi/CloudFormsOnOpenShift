@@ -87,7 +87,7 @@ Top Menu `Configuration`-> `New Provider`
 
 Security Protocol: `SSL without validation`  	
 
-Hostname:  <your master hostname without prefixing with protocol> (eg: master.devday.ocpcloud.com no https)	
+Hostname:  `your master hostname without prefixing with protocol` (eg: master.devday.ocpcloud.com no https)	
 
 API Port: `443`or `8443`	
 
@@ -104,7 +104,7 @@ You must use management-admin token. Otherwise you will have issues with hawkula
 
 Security Protocol: `SSL without validation`	
 
-Hostname: <your hawkular metrics url without https and without /hawkular/metrics>  (eg: hawkular-metrics.apps.devday.ocpcloud.com)	
+Hostname: `your hawkular metrics url without https and without /hawkular/metrics`  (eg: hawkular-metrics.apps.devday.ocpcloud.com)	
 
 API Port: `443`	
 
