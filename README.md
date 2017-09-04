@@ -85,7 +85,7 @@ Top Menu `Configuration`-> `New Provider`
 
 **Default tab:**
 
-Security Protocol: `SSL without validation  	
+Security Protocol: `SSL without validation`  	
 
 Hostname:  <your master hostname without prefixing with protocol> (eg: master.devday.ocpcloud.com no https)	
 
